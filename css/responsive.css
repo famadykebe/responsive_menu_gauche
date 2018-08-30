@@ -1,0 +1,134 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+a, a:hover {
+  text-decoration: none;
+  color: #444; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  overflow-x:hidden;
+}
+
+header, nav, section, footer, article, aside, figure, video, figcaption {
+  display: block; }
+
+/*--header top-bare--*/
+.top-barre {
+  background: #006d55;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  color: #fff;
+  text-align: center;
+  font-weight: 700; }
+
+.top-barre .title-bar {
+  font-size: 2.5rem; }
+
+/*-- menu(la avigation)--*/
+.navigation {
+  width: 100%;
+  background: #37987c;
+  text-align: center;
+  margin-bottom: 30px; }
+
+.navigation ul li {
+  list-style: none;
+  display: inline-block; }
+
+.navigation ul li a {
+  display: block;
+  padding: 20px 20px;
+  color: white; }
+
+.navigation ul li a:hover {
+  background: #30856c; }
+
+/*--contenu principale #main--*/
+#wrap {
+  max-width: 960px;
+  margin: 0px auto; }
+
+#wrap .load {
+  line-height: 1.5em; }
+
+.scroll-menu {
+  height: 340px !important; }
+
+/*-- @Media screen responsive--*/
+@media screen and (max-width: 580px) {
+  .top-barre {
+    position: relative; }
+
+  .top-barre .title-bar {
+    font-size: 2.1rem; }
+
+  .navigation {
+    padding: 9px 0px;
+    background: #37987c;
+    background: #035845;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 320px;
+    /*padding-top: 9px;*/
+    transform: translateX(-320px); }
+
+  .navigation ul {
+    /*margin-bottom:9px;*/
+    clear: both;
+    margin-top: -9px;
+    overflow: hidden;
+    transition: height .4s ease;
+    max-width: 100%; }
+
+  .navigation ul li {
+    width: 100%;
+    text-align: left; }
+
+  .barre {
+    padding: 10px;
+    background: #006d55;
+    display: inline-block;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 20px;
+    /*margin-bottom: 9px;*/
+    margin-top: 9px;
+    position: absolute;
+    top: 10px;
+    left: 0px; }
+
+  .barre span {
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    display: block;
+    margin-bottom: 4px; }
+
+  .corporelle {
+    transform: translateX(0px);
+    transition-duration: 0.3s; }
+
+  #wrap {
+    padding: 20px; }
+
+  .menu-body {
+    overflow-y: hidden; }
+    .menu-body .corporelle {
+      transform: translateX(320px); }
+    .menu-body .site-cache {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      bottom: 0px;
+      right: 0px;
+      background: rgba(0, 0, 0, 0.6);
+      cursor: pointer; } }
+
+/*# sourceMappingURL=responsive.css.map */
